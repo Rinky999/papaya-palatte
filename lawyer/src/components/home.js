@@ -373,7 +373,7 @@ function Home() {
                                                                 <a href="#">Free Online Shopping</a>
                                                             </div>
                                                             <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
+                                                                {/* <img src="img/svg/icon-heart.svg" alt="ico-heart"/> */}
                                                             </div>
                                                         </div>
                                                         <div class="data_info">
@@ -388,7 +388,7 @@ function Home() {
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
-                                                                 <li >💬 Chat</li>
+                                                                 <li>💬 Chat</li>
                                                                 <li>📞 Call</li>
                                                                 <li>🟢 whatsapp</li>
                                                             

@@ -35,7 +35,7 @@ const AuthTabs = () => {
   });
 
   const formContainerStyle = {
-    padding: '75px 30px',
+    padding: '85px 50px',
   };
 
   const formStyle = {
@@ -86,7 +86,7 @@ const AuthTabs = () => {
       <div style={formContainerStyle}>
         {activeTab === 'login' ? (
           <form style={formStyle}>
-            <h2 style={{ color: '#333' }}>Welcome Back!</h2>
+            <h4 style={{ color: '#333', marginTop:'-40px'}}>Welcome Back!</h4>
             <input type="text" placeholder="Username" required style={inputStyle} />
             <input type="password" placeholder="Password" required style={inputStyle} />
             <button type="submit" style={buttonStyle}>
@@ -95,7 +95,7 @@ const AuthTabs = () => {
           </form>
         ) : (
           <form style={formStyle}>
-            <h2 style={{ color: '#333' }}>Create Account</h2>
+            <h4 style={{ color: '#333', marginTop:'-40px'}}>Create Account</h4>
             <input type="text" placeholder="Full Name" required style={inputStyle} />
             <input type="email" placeholder="Email" required style={inputStyle} />
             <input type="text" placeholder="Username" required style={inputStyle} />
