@@ -10,7 +10,7 @@ function Register() {
 
 
 
-            <div class="fl-mobile-nav">
+            {/* <div class="fl-mobile-nav">
 
                 <div id="dl-menu" class="dl-menuwrapper">
                     <button class="dl-trigger">Open Menu</button>
@@ -59,12 +59,12 @@ function Register() {
 
 
 
-            </div>
+            </div> */}
 
 
             <header class="fl-header">
 
-
+{/* 
                 <div class="dots-menu">
                     <div id="menu_button" class="link-dots" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrollingLeftMenu" aria-controls="offcanvasScrolling">
                         <div class="menu-toggle">
@@ -79,29 +79,34 @@ function Register() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                <div class="nav-logo d-flex align-items-center">
+                {/* <div class="nav-logo d-flex align-items-center">
                     <a class="logo-img" href="index.html">
                         <img src="img/png/logo.png" alt="logo" width="172" height="45" />
+                    </a>
+                </div> */}
+
+ <div class="nav-logo d-flex align-items-center">
+                    <a class="logo-img" href="index.html">
+                         <h3 style={{textAlign:'center', fontSize:'25px'}}><u>FindMyLawyer</u></h3>
                     </a>
                 </div>
 
 
 
-
-                <div class="container-fluid d-flex align-items-center header-search">
+                {/* <div class="container-fluid d-flex align-items-center header-search">
                     <form class="d-flex w-100">
                         <button class="btn" type="submit">
                             <i class="icon-search-1" aria-hidden="true"></i>
                         </button>
                         <input class="form-control me-2" type="search" placeholder="Search anything .... " aria-label="Search" aria-placeholder="Search anything .... "/>
                     </form>
-                </div>
+                </div> */}
 
 
 
-                <div class="link-reg d-flex align-items-center justify-content-sm-between justify-content-md-between justify-content-end ">
+                {/* <div class="link-reg d-flex align-items-center justify-content-sm-between justify-content-md-between justify-content-end ">
                     <ul class="d-flex nav-icons">
                         <li class="ic-site-settings">
                             <a href="#">
@@ -131,7 +136,7 @@ function Register() {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
 
 
 
@@ -211,7 +216,8 @@ function Register() {
                     <div class="row">
                         <div class="col-lg col-12 column-first">
                             <a class="navbar-brand d-flex align-items-center logo-footer" href="index.html">
-                                <img src="img/png/footer-logo.png" alt="logo" width="172" height="45" />
+                                            <h3 style={{textAlign:'center', fontSize:'25px',color:'white'}}><u>FindMyLawyer</u></h3>
+                                {/* <img src="img/png/footer-logo.png" alt="logo" width="172" height="45" /> */}
                             </a>
                             <p class="text"> We believe that the best way to make sure our products are the best they can be is to listen to what our customers have to say. That’s why we’re constantly asking for feedback and publishing reviews by customers on our website.</p>
                             <div class="d-flex flex-wrap flex-lg-column justify-content-between">

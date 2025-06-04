@@ -5237,18 +5237,18 @@ html .nav-pills .nav-link {
 }
 
 .box-form .form .form-title {
-    font-size: 30px;
+    font-size: 20px;
     color: #222222;
     font-weight: 600;
     line-height: 1.267;
     text-align: left;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     position: relative;
     padding-bottom: 6px;
 }
 
 
-.box-form .form .form-title:after {
+/* .box-form .form .form-title:after {
     font-family: 'icomoon';
     position: absolute;
     content: "\eac7";
@@ -5262,7 +5262,7 @@ html .nav-pills .nav-link {
     padding-bottom: 5px;
     font-size: 37px;
     color: #ffc248;
-}
+} */
 
 
 .contact-content .title:after {
@@ -8144,6 +8144,63 @@ comment .post-comments .comment-author img {
         width: 764px;
     }
 
+
+    /* //===================================== */
+      /* .hover-link {
+    text-decoration: none;
+    color: #007BFF;
+    transition: all 0.3s ease;
+  }
+
+  .hover-link:hover {
+    color: purple;
+    text-decoration: underline;
+  } */
+/* .hover-link {
+  text-decoration: none;
+  color: #007BFF;
+  transition: all 0.3s ease;
+}
+
+.hover-link:link,
+.hover-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.hover-link:hover,
+.hover-link:focus {
+  color: black;
+  text-decoration: underline;
+}
+
+.hover-link:active {
+  color:blue;
+  text-decoration: underline;
+} */
+
+
+a:link {
+  color: #007BFF; /* Blue */
+  text-decoration: none;
+}
+
+/* Visited state */
+a:visited {
+  color: black; /* Purple */
+}
+
+/* Hover state */
+a:hover {
+  color: blue; /* Darker blue */
+  text-decoration: underline;
+}
+
+/* Active state */
+a:active {
+  color: blue; /* Darker blue */
+}
+/*  */
     .first__screen--bg-img::after {
         content: '';
     }
@@ -9255,7 +9312,7 @@ comment .post-comments .comment-author img {
 
 
     .hand__picked-brand img {
-        width: 90%;
+        width: 100%;
     }
 
     .page-card .listing__products .listing-card.ll-none {

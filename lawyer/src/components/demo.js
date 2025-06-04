@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import Header from '../components/header';
 
-
-const Login = () => {
+const AuthTabs = () => {
   const [activeTab, setActiveTab] = useState('login');
 
   const containerStyle = {
@@ -63,9 +63,11 @@ const Login = () => {
   };
 
   return (
+
     <div>
-       
+      <Header/>
     <div style={containerStyle}>
+    
       <div style={tabsStyle}>
         <button
           onClick={() => setActiveTab('login')}
@@ -110,4 +112,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default AuthTabs;

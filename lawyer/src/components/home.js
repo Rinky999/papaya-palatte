@@ -1,8 +1,11 @@
 import React from 'react'
 import '../css/style.css'
-
+import Header from '../components/header';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+    const navigate=useNavigate()
   return (
     <div>
  
@@ -14,10 +17,10 @@ function Home() {
             <div class="fl-mobile-nav">
                 <div id="dl-menu" class="dl-menuwrapper">
                     <button class="dl-trigger">Open Menu</button>
-                    {/* <h3 style={{textAlign:'center'}}>FindMyLawyer</h3> */}
+                  
                     <ul class="dl-menu">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a onClick={()=>navigate('/')}>Home</a>
                         </li>
                         <li>
                             <a href="#">Our Listing</a>
@@ -45,87 +48,15 @@ function Home() {
                 </div>
               
                 <a class="mobile-logo-img" href="index.html">
-                      <h3 style={{textAlign:'left'}}>FindMyLawyer</h3>
+                      <h5 style={{textAlign:'left'}}>FindMyLawyer</h5>
                     {/* <img src="img/png/logo.png" alt="logo" width="172" height="45"/> */}
                 </a>
                 <div class="m-login">
                     <a href="/"><i class="icon-user icons"></i><span>Login</span></a>
                 </div>
             </div>
-            <header class="fl-header fl-header-single fl-header-type1">
-                <div class="nav-logo d-flex align-items-center">
-                   
-                </div>
-                <nav class="fl-mega-menu nav-menu">
-                    <ul id="menu-main-menu-1" class="menu nav-menu">
-                        <li class="nav-item ">
-                            <a href="index.html" class="menu-link main-menu-link item-title">Home</a>
-                            {/* <div class="sub-nav">
-                                <ul class="menu-depth-1 sub-menu sub-nav-group">
-                                    <li><a href="index.html">Home - Classic</a></li>
-                                    <li><a href="home-2.html">Home - Rental</a></li>
-                                    <li><a href="home-3.html">Home - Products</a></li>
-                                </ul>
-                            </div> */}
-                        </li>
-                        <li class="nav-item ">
-                            <a href="about.html" class="menu-link main-menu-link item-title">Find Lawyers</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="li" class="menu-link main-menu-link item-title">How It Works</a>
-                            {/* <div class="sub-nav">
-                                <ul class="menu-depth-1 sub-menu sub-nav-group">
-                                    <li class="sub-nav-item"><a href="02_listings-list.html" class="menu-link sub-menu-link">Listing - List</a></li>
-                                    <li class="sub-nav-item"><a href="02_listings-grid.html" class="menu-link sub-menu-link">Listing - Grid</a></li>
-                                    <li class="sub-nav-item"><a href="02_listings-left-filter-grid.html" class="menu-link sub-menu-link">Listing - Left Filter</a></li>
-                                    <li class="sub-nav-item"><a href="02_listings-top-filter.html" class="menu-link sub-menu-link">Listing - Top Filter</a></li>
-                                    <li class="sub-nav-item"><a href="02_listings-services.html" class="menu-link sub-menu-link">Listings - Services</a></li>
-                                </ul>
-                            </div> */}
-                        </li>
-                        <li class="nav-item has-submenu ">
-                            <a href="#" class="menu-link main-menu-link item-title">Legal Resources</a>
-                            {/* <div class="sub-nav">
-                                <ul class="menu-depth-1 sub-menu sub-nav-group">
-                                    <li class="sub-nav-item"><a href="blog.html" class="menu-link sub-menu-link">News</a></li>
-                                    <li class="sub-nav-item"><a href="single-post.html" class="menu-link sub-menu-link">Single Post</a></li>
-                                </ul>
-                            </div> */}
-                        </li>
-                        <li class="nav-item ">
-                            <a href="#" class="menu-link main-menu-link item-title">About Us</a>
-                            {/* <div class="sub-nav">
-                                <ul class="menu-depth-1 sub-menu sub-nav-group">
-                                    <li class="sub-nav-item"><a href="contact.html" class="menu-link sub-menu-link">Contact</a></li>
-                                    <li class="sub-nav-item"><a href="404.html" class="menu-link sub-menu-link">404 page</a></li>
-                                    <li class="sub-nav-item"><a href="login.html" class="menu-link sub-menu-link">Login</a></li>
-                                    <li class="sub-nav-item"><a href="register.html" class="menu-link sub-menu-link">Registration</a></li>
-                                </ul>
-                            </div> */}
-                        </li>
-                         <li class="nav-item">
-                             <a href="#" class="menu-link main-menu-link item-title">Contact</a>
-                         </li>
-                    </ul>
-                </nav>
-                <div class="link-reg d-flex flex-lg-no-wrap flex-wrap flex-lg-row flex-column align-items-center justify-content-sm-between justify-content-md-center justify-content-end">
-                    <ul class="d-flex mb-xl-0 mb-4">
-                        <li>
-                            <a href="login.html"><i class="icon-user icons"></i>Login</a>
-                        </li>
-                        <li class="line__v">|</li>
-                        <li>
-                            <a href="register.html"><i class="icon-notifications icons"></i>Notifications</a>
-                        </li>
-                    </ul>
-                    <a href="#" class="submit__listing second-bg-color btn-hover-animate btn-hover-shadow">Submit Listing
-                        <span class="btn-icon-span">
-                            <i class="fa fa-list fa-first"></i>
-                            <i class="fa fa-chevron-right fa-second"></i>
-                        </span>
-                    </a>
-                </div>
-            </header>
+             <Header/>
+          
         </div>
         <main class="main">
             <div class="container__1620">
@@ -134,12 +65,12 @@ function Home() {
                         <div class="col-xl-5 col-lg-5 col-md-6 col-12 first__screen--bg-img">
                             <div class="first__screen-content">
                                 <div class="svg45">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.57 13.01">
+                                    {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.57 13.01">
                                         <polyline class="a" points="1.66 3.6 10.41 9.41 19.15 3.6 27.9 9.41 36.65 3.6 45.4 9.41 54.16 3.6 62.91 9.41" />
-                                    </svg>
+                                    </svg> */}
                                 </div>
-                                <h1 class="first__screen-title"> Connect with Verified Lawyers Instantly-  <br/> Get Legal Help When You Need It</h1>
-                                <p class="first__screen-description">"Chat with experienced lawyers in real-time. First 5 minutes free, then pay per minute for expert legal advice.</p>
+                                <h1 class="first__screen-title" style={{fontSize:'40px'}}> Connect with Verified Lawyers Instantly  <br/> Get Legal Help When You Need It</h1>
+                                <p class="first__screen-description"style={{fontSize:'30px'}}>Chat with experienced lawyers in real-time. First 5 minutes free, then pay per minute for expert legal advice.</p>
                                 <div class="first__screen-form">
                                     <form action="#">
                                         <div class="input-group">
@@ -178,9 +109,9 @@ function Home() {
                         </div>
                         <div class="col-xl-7  col-lg-7 col-md-6  col-12 z-i-10">
                             <div class="layer1">
-                                <source srcset="img/businessman.avif" type="image/avif"/>
-                                <source srcset="img/businessman.webp" type="image/webp"/>
-                                <img loading="lazy" src="img/businessman.jpg" width="950" height="600" alt="businessman"/>
+                                {/* <source srcset="img/businessman.avif" type="image/avif"/> */}
+                                {/* <source srcset="img/businessman.webp" type="image/webp"/> */}
+                                <img loading="lazy" src="https://www.liveabout.com/thmb/X2Ro71jYgY2aTac5pLAIh_wRSmc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lawyer-and-client-10072958-5c571531c9e77c000102c66c.jpg" width="950" height="600" alt="businessman"/>
                             </div>
                         </div>
                     </div>
@@ -293,16 +224,19 @@ function Home() {
                         </div>
                     </div>
                     <span class="shape-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.81 211.79" width="22px" height="56px">
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.81 211.79" width="22px" height="56px">
                             <path d="M45,60.9l-45,45,45,45-45,45,15.91,15.9,60.9-60.9-45-45,45-45L15.91,0,0,15.91Z" />
-                        </svg>
+                        </svg> */}
                     </span>
-                    <h3 class="hand__picked-featured text-center"> We’re Featured On ... </h3>
+                    <h3 class="hand__picked-featured text-center"> We're Featured On ... </h3>
                 </div>
                 <div class="container__1320">
                     <div class=" row justify-content-lg-between justify-content-center align-items-center flex-wrap text-center">
                         <div class="mb-12 col-sm-12 col-lg-12 d-flex justify-content-center">
-                            <div class="hand__picked-brand"><img src="img/brand-all.jpg" alt="eastin"/></div>
+                            <div class="hand__picked-brand"><img src="https://tse3.mm.bing.net/th?id=OIP.EXyMVn2AvTU58ahj_1DGvQHaDj&pid=Api&P=0&h=180" alt="eastin"style={{width:'350px',height:'200px'}}/></div>
+                             <div class="hand__picked-brand"><img src="https://gttb.com/wp-content/uploads/2024/06/Lawyer-International-Legal-100-2024-GTB-Technologies-Inc.-1.pdf-1.pdf-1.png" alt="eastin"style={{width:'350px',height:'200px'}}/></div>
+                              <div class="hand__picked-brand"><img src="https://www.revechat.com/wp-content/uploads/2022/10/types-of-customer-satisfaction-rating-scale.png" alt="eastin" style={{width:'350px',height:'200px'}}/></div>
+                               <div class="hand__picked-brand"><img src="https://static1.galls.com/photos/styles/qm/zoom/S01-663.jpg" alt="eastin" style={{width:'350px',height:'200px'}}/></div>
                         </div>
                     </div>
                 </div>
@@ -399,9 +333,334 @@ function Home() {
                                 <button class="nav-link" id="pills-contact-tab3" data-bs-toggle="pill" data-bs-target="#pills-choice" type="button" role="tab" data-aria-controls="pills-contact" aria-selected="false"> Editor’s Choice </button>
                             </li>
                         </ul>
-                        <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-content" id="pills-tabContent" >
                             <div class="tab-pane fade show active" id="pills-all" role="tabpanel" data-aria-labelledby="pills-home-tab">
+                                <div class="row slww" >
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box listing-card__box_featured" data-marker="3">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="https://static2.bigstockphoto.com/5/6/3/large1500/365525101.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-card__bookmark active">
+                                                        Featured
+                                                    </div>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Free Online Shopping</a>
+                                                            </div>
+                                                            <div class="heart active">
+                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box" data-marker="1">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="https://www.lawyer.com/img/banner-image.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Zeon Luxury Apartments</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="https://fthmb.tqn.com/Kcf8EVzEvVsS3hV4l_3KVipw6GE=/4841x3633/filters:fill(auto,1)/Gettywomanlawyer-5955ab903df78cdc296e8f7e.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Traveling to Bankok</a>
+                                                            </div>
+                                                            <div class="heart active">
+                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="https://img.freepik.com/premium-photo/professional-lawyer-image-generated-ai_644690-13316.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Mercedes S-Class 2020 </a>
+                                                            </div>
+                                                            <div class="heart active">
+                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            {/* <div class="listing-card__box">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="https://c8.alamy.com/comp/B5WK0P/portrait-of-a-female-lawyer-holding-a-book-B5WK0P.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Traveling to Bankok</a>
+                                                            </div>
+                                                            <div class="heart active">
+                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div class="tab-pane fade" id="pills-rated" role="tabpanel" data-aria-labelledby="pills-profile-tab">
                                 <div class="row slww">
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box" data-marker="1">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="img/listing-2.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Zeon Luxury Apartments</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class=" col-12 col-xl-4 col-md-6">
                                         <div class="listing-card ll-none">
                                             <div class="listing-card__box listing-card__box_featured" data-marker="3">
@@ -673,333 +932,8 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-rated" role="tabpanel" data-aria-labelledby="pills-profile-tab">
-                                <div class="row slww">
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box" data-marker="1">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-2.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Zeon Luxury Apartments</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box listing-card__box_featured" data-marker="3">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-3.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-card__bookmark active">
-                                                        Featured
-                                                    </div>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Free Online Shopping</a>
-                                                            </div>
-                                                            <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box" data-marker="1">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-2.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Zeon Luxury Apartments</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-4.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Traveling to Bankok</a>
-                                                            </div>
-                                                            <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-1.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Mercedes S-Class 2020 </a>
-                                                            </div>
-                                                            <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-4.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Traveling to Bankok</a>
-                                                            </div>
-                                                            <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-most-viewed" role="tabpanel" data-aria-labelledby="pills-contact-tab">
+                            </div> */}
+                            {/* <div class="tab-pane fade" id="pills-most-viewed" role="tabpanel" data-aria-labelledby="pills-contact-tab">
                                 <div class="row slww">
                                     <div class=" col-12 col-xl-4 col-md-6">
                                         <div class="listing-card ll-none">
@@ -1323,282 +1257,8 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-most-popular" role="tabpanel" data-aria-labelledby="pills-contact-tab">
-                                <div class="row slww">
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box" data-marker="1">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-2.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Zeon Luxury Apartments</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box listing-card__box_featured" data-marker="3">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-3.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-card__bookmark active">
-                                                        Featured
-                                                    </div>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Free Online Shopping</a>
-                                                            </div>
-                                                            <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-4.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Traveling to Bankok</a>
-                                                            </div>
-                                                            <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-1.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Mercedes S-Class 2020 </a>
-                                                            </div>
-                                                            <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-12 col-xl-4 col-md-6">
-                                        <div class="listing-card ll-none">
-                                            <div class="listing-card__box">
-                                                <div class="listing-card__media shine">
-                                                    <a href="02_listings-grid.html">
-                                                        <img src="img/listing-4.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
-                                                    </a>
-                                                    <div class="listing-btn-action">
-                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
-                                                            <i class="fa-solid fa-eye"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
-                                                            <i class="fa-solid fa-code-compare"></i>
-                                                            <i class="fa-solid fa-not-equal"></i>
-                                                        </a>
-                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                            <i class="fa-solid fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="listing-card__middle">
-                                                    <div class="listing-card__body">
-                                                        <div class="body-wrapper">
-                                                            <div class="title">
-                                                                <a href="#">Traveling to Bankok</a>
-                                                            </div>
-                                                            <div class="heart active">
-                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="data_info">
-                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
-                                                        </div>
-                                                        <p class="body-text">
-                                                            Quis nostrud exercitation ullamco laboris nisit
-                                                            aliquip ex ea commodo consequat...
-                                                        </p>
-                                                    </div>
-                                                    <div class="listing-card__info">
-                                                        <div class="info-wrapper">
-                                                            <div class="price">$3,250.00</div>
-                                                            <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-choice" role="tabpanel" data-aria-labelledby="pills-contact-tab">
+                            </div> */}
+                            {/* <div class="tab-pane fade" id="pills-most-popular" role="tabpanel" data-aria-labelledby="pills-contact-tab">
                                 <div class="row slww">
                                     <div class=" col-12 col-xl-4 col-md-6">
                                         <div class="listing-card ll-none">
@@ -1871,7 +1531,281 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
+                            {/* <div class="tab-pane fade" id="pills-choice" role="tabpanel" data-aria-labelledby="pills-contact-tab">
+                                <div class="row slww">
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box" data-marker="1">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="img/listing-2.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Zeon Luxury Apartments</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box listing-card__box_featured" data-marker="3">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="img/listing-3.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-card__bookmark active">
+                                                        Featured
+                                                    </div>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Free Online Shopping</a>
+                                                            </div>
+                                                            <div class="heart active">
+                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="img/listing-4.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Traveling to Bankok</a>
+                                                            </div>
+                                                            <div class="heart active">
+                                                                <img src="img/svg/icon-heart.svg"  alt="ico-heart"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="img/listing-1.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Mercedes S-Class 2020 </a>
+                                                            </div>
+                                                            <div class="heart active">
+                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 col-xl-4 col-md-6">
+                                        <div class="listing-card ll-none">
+                                            <div class="listing-card__box">
+                                                <div class="listing-card__media shine">
+                                                    <a href="02_listings-grid.html">
+                                                        <img src="img/listing-4.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                    </a>
+                                                    <div class="listing-btn-action">
+                                                        <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
+                                                            <i class="fa-solid fa-eye"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Addto Compare" title="" data-aria-describedby="data-uk-tooltip-1">
+                                                            <i class="fa-solid fa-code-compare"></i>
+                                                            <i class="fa-solid fa-not-equal"></i>
+                                                        </a>
+                                                        <a class="listing-btn-ico listing-tgl-button" href="#" data-uk-tooltip="Add to Favorite" title="" data-aria-describedby="data-uk-tooltip-2">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <i class="fa-solid fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="listing-card__middle">
+                                                    <div class="listing-card__body">
+                                                        <div class="body-wrapper">
+                                                            <div class="title">
+                                                                <a href="#">Traveling to Bankok</a>
+                                                            </div>
+                                                            <div class="heart active">
+                                                                <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="data_info">
+                                                            <i class="fa fa-map-pin"></i>Washington DC, USA
+                                                        </div>
+                                                        <p class="body-text">
+                                                            Quis nostrud exercitation ullamco laboris nisit
+                                                            aliquip ex ea commodo consequat...
+                                                        </p>
+                                                    </div>
+                                                    <div class="listing-card__info">
+                                                        <div class="info-wrapper">
+                                                            <div class="price">$3,250.00</div>
+                                                            <ul class="data-item d-flex justify-content-between">
+                                                                <li>Automatic</li>
+                                                                <li>Petrol</li>
+                                                                <li>AWD</li>
+                                                                <li>2021</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -1902,7 +1836,7 @@ function Home() {
                             <div class="we__offer-card d-flex flex-column">
                                 <div class="we__offer-card_icon"><i class="icon-search second-color"></i></div>
                                 <h5 class="title">Huge Products Listings</h5>
-                                <p class="text"> If you enjoy the thrill of a bargain, you’re probably always shopping online, on your phone or in the high street. </p>
+                                <p class="text"> If you enjoy the thrill of a bargain, you're probably always shopping online, on your phone or in the high street. </p>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 p-0 m-0">
@@ -1928,9 +1862,9 @@ function Home() {
                     <h2 class="reviews__title">
                         Reviews By Customers
                         <span class="shape-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.81 211.79" width="22px" height="56px">
+                            {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.81 211.79" width="22px" height="56px">
                                 <path d="M45,60.9l-45,45,45,45-45,45,15.91,15.9,60.9-60.9-45-45,45-45L15.91,0,0,15.91Z"></path>
-                            </svg>
+                            </svg> */}
                         </span>
                     </h2>
                     <div class="reviews__slider">
