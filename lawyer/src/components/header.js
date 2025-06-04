@@ -64,19 +64,12 @@ function Header() {
                 <div class="link-reg d-flex flex-lg-no-wrap flex-wrap flex-lg-row flex-column align-items-center justify-content-sm-between justify-content-md-center justify-content-end">
                     <ul class="d-flex mb-xl-0 mb-4">
                         <li>
-                            <a onClick={()=>navigate('/login')} style={{cursor:"pointer"}}><i class="icon-user icons"></i>Login</a>
+                            <a onClick={()=>navigate('/login')} style={{cursor:"pointer",fontSize:"18px",fontWeight:"bold"}}><i class="icon-user icons"></i>Login/Sign Up</a>
                         </li>
-                        <li class="line__v">|</li>
-                        <li>
-                            <a href="register.html"><i class="icon-notifications icons"></i>Notifications</a>
-                        </li>
+                       
+                     
                     </ul>
-                    <a href="#" class="submit__listing second-bg-color btn-hover-animate btn-hover-shadow">Submit Listing
-                        <span class="btn-icon-span">
-                            <i class="fa fa-list fa-first"></i>
-                            <i class="fa fa-chevron-right fa-second"></i>
-                        </span>
-                    </a>
+                   
                 </div>
             </header>
       

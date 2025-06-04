@@ -35,7 +35,7 @@ const Login = () => {
   });
 
   const formContainerStyle = {
-    padding: '25px 30px',
+    padding: '55px 60px',
   };
 
   const formStyle = {

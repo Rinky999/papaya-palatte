@@ -2751,7 +2751,7 @@ All this is done for any sub-level being entered.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .first__screen .layer1 img {
@@ -2774,8 +2774,8 @@ All this is done for any sub-level being entered.
 
 
 .first__screen .layer1:before {
-    content: '';
-    width: 10px;
+    /* content: ''; */
+    width:10px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -5247,8 +5247,8 @@ html .nav-pills .nav-link {
     padding-bottom: 6px;
 }
 
-
-/* .box-form .form .form-title:after {
+/* 
+.box-form .form .form-title:after {
     font-family: 'icomoon';
     position: absolute;
     content: "\eac7";
@@ -5262,7 +5262,7 @@ html .nav-pills .nav-link {
     padding-bottom: 5px;
     font-size: 37px;
     color: #ffc248;
-} */
+}  */
 
 
 .contact-content .title:after {
@@ -8631,7 +8631,11 @@ a:active {
     html .featured__category-title + .row {
         margin-bottom: 40px;
     }
+.main__img{
+   margin-top: 70px;
+   margin-bottom: 90pxdown;
 
+}
 
     html .featured__category-title {
         margin-bottom: 60px;
@@ -10360,9 +10364,9 @@ a:active {
         line-height: 48px !important;
     }
 
-    .first__screen .layer1 {
+    /* .first__screen .layer1 {
         display: none;
-    }
+    } */
 
 
     .first__screen-content {

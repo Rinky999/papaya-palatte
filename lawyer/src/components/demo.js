@@ -35,7 +35,7 @@ const AuthTabs = () => {
   });
 
   const formContainerStyle = {
-    padding: '25px 30px',
+    padding: '75px 30px',
   };
 
   const formStyle = {

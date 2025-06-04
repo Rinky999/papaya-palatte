@@ -2,6 +2,9 @@ import React from 'react'
 import '../css/style.css'
 import Header from '../components/header';
 import { useNavigate } from 'react-router-dom';
+import logo from '../components/counvoImg/counvo - Findmylawyer.jpg'
+import logo1 from '../components/counvoImg/counvo - Findmylawyer.png'
+import logo2 from '../components/counvoImg/counvo - Findmylawyer_Icon (1).png'
 
 function Home() {
 
@@ -62,8 +65,15 @@ function Home() {
             <div class="container__1620">
                 <section class="first__screen">
                     <div class="row">
-                        <div class="col-xl-5 col-lg-5 col-md-6 col-12 first__screen--bg-img">
-                            <div class="first__screen-content">
+                     
+                            <div >
+                                {/* <source srcset="img/businessman.avif" type="image/avif"/> */}
+                                {/* <source srcset="img/businessman.webp" type="image/webp"/> */}
+
+                                <img src="https://www.liveabout.com/thmb/X2Ro71jYgY2aTac5pLAIh_wRSmc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lawyer-and-client-10072958-5c571531c9e77c000102c66c.jpg" alt="businessman" style={{height:"700px",width:"100%"}}/>
+                            </div>
+                            <div style={{height:"500px",backgroundColor:"white",marginTop:"-150px",zIndex:"9999",borderRadius:"8px",width:"70%",marginLeft:"15%",padding:"20px"}}>
+                             <div >
                                 <div class="svg45">
                                     {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.57 13.01">
                                         <polyline class="a" points="1.66 3.6 10.41 9.41 19.15 3.6 27.9 9.41 36.65 3.6 45.4 9.41 54.16 3.6 62.91 9.41" />
@@ -71,12 +81,14 @@ function Home() {
                                 </div>
                                 <h1 class="first__screen-title" style={{fontSize:'40px'}}> Connect with Verified Lawyers Instantly  <br/> Get Legal Help When You Need It</h1>
                                 <p class="first__screen-description"style={{fontSize:'30px'}}>Chat with experienced lawyers in real-time. First 5 minutes free, then pay per minute for expert legal advice.</p>
-                                <div class="first__screen-form">
+                                <div class="first__screen-form" style={{width:'100%'}}>
                                     <form action="#">
                                         <div class="input-group">
-                                            <input type="search" class="form-control" aria-label="Text input with dropdown button" placeholder="Search anything .... "/>
+                                            {/* <input type="search" class="form-control" aria-label="Text input with dropdown button" placeholder="Search anything .... "/> */}
                                             <span class="form-input-midle"></span>
-                                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Location </button>
+                                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Select Vendor </button>
+                                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select City</button>
+                                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Select Locality </button>
                                             <ul class="dropdown-menu dropdown-menu-end">
                                                 <li>
                                                     <a class="dropdown-item" href="#">London</a>
@@ -101,22 +113,15 @@ function Home() {
                                     </form>
                                 </div>
                                 <div class="first__screen-recent">
-                                    <p>
-                                        <b>Recent Searches: </b>Apartment, iPhone, Camera
-                                    </p>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-7  col-lg-7 col-md-6  col-12 z-i-10">
-                            <div class="layer1">
-                                {/* <source srcset="img/businessman.avif" type="image/avif"/> */}
-                                {/* <source srcset="img/businessman.webp" type="image/webp"/> */}
-                                <img loading="lazy" src="https://www.liveabout.com/thmb/X2Ro71jYgY2aTac5pLAIh_wRSmc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lawyer-and-client-10072958-5c571531c9e77c000102c66c.jpg" width="950" height="600" alt="businessman"/>
                             </div>
-                        </div>
                     </div>
+                    
                 </section>
             </div>
+              
             <section class="hand__picked">
                 <div class="container">
                     <h3 class="hand__picked-subtitle text-center first-color"> Explore all offer for business</h3>
@@ -127,6 +132,7 @@ function Home() {
                                 <div class="hand__picked-item vehicles d-flex flex-column align-items-center justify-content-center">
                                     <div class="fl-icon-box">
                                         <img src='https://www.freeiconspng.com/uploads/family-icon-9.png'/>
+                                        {/* <img src={logo}/> */}
                                         {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347.57 248.41">
                                             <path class="a" d="M334.77,118.72a13.67,13.67,0,0,0,12.8-13.58A28.9,28.9,0,0,0,318.7,76.27H302.86l-7.39-40.14A44.13,44.13,0,0,0,252.07,0H95.5A44.13,44.13,0,0,0,52.1,36.13L44.71,76.27H28.88A28.9,28.9,0,0,0,0,105.14a13.67,13.67,0,0,0,12.8,13.58C.11,131.79,0,150.9,0,150.9v76.27a21.31,21.31,0,0,0,21.25,21.24h30.5A21.31,21.31,0,0,0,73,227.17v-9.26H274.57v9.26a21.31,21.31,0,0,0,21.24,21.24h30.51a21.31,21.31,0,0,0,21.25-21.24V150.9S347.46,131.79,334.77,118.72ZM318.7,88.25a16.93,16.93,0,0,1,16.88,16.89,1.63,1.63,0,0,1-1.63,1.63H311.54l-.4-.26-.43-.29-.38-.32c-.13-.11-.26-.22-.38-.34s-.23-.23-.34-.35-.24-.26-.35-.4l-.29-.37c-.11-.15-.21-.3-.31-.46a4.11,4.11,0,0,1-.24-.39c-.1-.17-.19-.35-.28-.52l-.18-.39c-.09-.2-.16-.42-.24-.63l-.12-.34a8.76,8.76,0,0,1-.25-1l-2.28-12.45ZM12,105.14a16.93,16.93,0,0,1,16.9-16.89H42.5l-2.28,12.37a9.13,9.13,0,0,1-.26,1c0,.1-.07.2-.1.31s-.16.45-.26.67-.11.24-.16.35-.19.39-.3.58l-.21.35c-.11.18-.23.34-.34.51l-.27.34c-.12.15-.25.3-.38.44l-.31.33c-.13.13-.27.25-.41.37l-.36.3c-.13.1-.27.19-.41.28s-.28.2-.43.29H13.62A1.64,1.64,0,0,1,12,105.14Zm323.6,122a9.29,9.29,0,0,1-9.26,9.26H295.81a9.29,9.29,0,0,1-9.26-9.26V211.91a6,6,0,0,0-6-6H67a6,6,0,0,0-6,6v15.26a9.29,9.29,0,0,1-9.27,9.26H21.25A9.29,9.29,0,0,1,12,227.17V150.9s-.19-26.55,23.78-31.34l.17,0a23.51,23.51,0,0,0,3.78-1.22s0,0,0,0A20.89,20.89,0,0,0,52,102.8l3.59-19.45,8.3-45A32.14,32.14,0,0,1,95.5,12H252.07A32.14,32.14,0,0,1,283.68,38.3l8.3,45,3.59,19.53a20.76,20.76,0,0,0,12.24,15.41l.13,0a23.61,23.61,0,0,0,3.68,1.19l.18,0c23.95,4.79,23.78,31.3,23.78,31.34Z" />
                                             <path class="a" d="M265.3,183h-183a6,6,0,0,0,0,12h183a6,6,0,1,0,0-12Z" />
@@ -382,10 +388,10 @@ function Home() {
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
+                                                                 <li >💬 Chat</li>
+                                                                <li>📞 Call</li>
+                                                                <li>🟢 whatsapp</li>
+                                                            
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -433,10 +439,10 @@ function Home() {
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
+                                                                 <li >💬 Chat</li>
+                                                                <li>📞 Call</li>
+                                                                <li>🟢 whatsapp</li>
+                                                            
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -471,9 +477,9 @@ function Home() {
                                                             <div class="title">
                                                                 <a href="#">Traveling to Bankok</a>
                                                             </div>
-                                                            <div class="heart active">
+                                                            {/* <div class="heart active">
                                                                 <img src="img/svg/icon-heart.svg" alt="ico-heart"/>
-                                                            </div>
+                                                            </div> */}
                                                         </div>
                                                         <div class="data_info">
                                                             <i class="fa fa-map-pin"></i>Washington DC, USA
@@ -487,10 +493,10 @@ function Home() {
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
+                                                                 <li >💬 Chat</li>
+                                                                <li>📞 Call</li>
+                                                                <li>🟢 whatsapp</li>
+                                                            
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -541,10 +547,10 @@ function Home() {
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
-                                                                <li>Automatic</li>
-                                                                <li>Petrol</li>
-                                                                <li>AWD</li>
-                                                                <li>2021</li>
+                                                             <li >💬 Chat</li>
+                                                                <li>📞 Call</li>
+                                                                <li>🟢 whatsapp</li>
+                                                            
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -554,6 +560,19 @@ function Home() {
                                     </div>
                                     <div class=" col-12 col-xl-4 col-md-6">
                                         <div class="listing-card ll-none">
+
+
+
+
+
+
+
+
+
+
+
+
+                                            
                                             {/* <div class="listing-card__box">
                                                 <div class="listing-card__media shine">
                                                     <a href="02_listings-grid.html">
@@ -1812,7 +1831,7 @@ function Home() {
             </section>
             <section class="we__offer">
                 <div class="container">
-                    <div class="we__offer-content">
+                    <div style={{marginTop:'-250px'}} >
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <h2 class="we__offer-title"> We Offer Wide Range of Listings Promoting Your Business </h2>
@@ -1857,7 +1876,7 @@ function Home() {
                 </div>
             </section>
             <section class="reviews reviews2 py-105">
-                <div class="container__1575">
+                <div class="container__1575" style={{marginTop:'-200px'}}>
                     <h3 class="reviews__subtitle text-center first-color"> We're proud to have earned their trust </h3>
                     <h2 class="reviews__title">
                         Reviews By Customers
