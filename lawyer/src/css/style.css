@@ -127,7 +127,7 @@
 }
 
 
-@media (max-width: 768px),(max-width: 480px){
+@media (max-width: 480px){
 .first-bg-color {
   background-color: #007BFF; /* Example background */
   color: white;
@@ -143,11 +143,11 @@
   transition: background-color 0.3s;
 }
 
-.btn-icon-span i {
+/* .btn-icon-span i {
   margin-left: 8px;
   transition: transform 0.3s;
 
-}
+} */
 }
 
 @media (max-width: 768px),(max-width: 480px){
@@ -184,7 +184,7 @@ width: 400px !important;
     font-size: 20px !important;
 
 }}
-@media(max-width:400){
+@media(max-width:480px){
     .responsive-img-3{
     width: 20px !important;
     margin-right: 50px !important;
@@ -229,13 +229,24 @@ width: 400px !important;
 
 }
 
-.btn-icon-span i {
+.btn-icon-span  {
   margin-left: 8px;
   transition: transform 0.3s;
-  
-}
+  width: 70px !important;
+  height: 40px !important;
 }
 
+    .mobile-logo-img img {
+       
+        height: 50px !important;
+        max-width: 120px;
+        margin: 0 auto;
+        
+    }
+.popular__listing-title.text-center{
+    font-size: 25px !important;
+}
+}
 
 
 /* ================================================== */
@@ -1957,7 +1968,7 @@ html .offcanvas-start {
 }
 
 
-.btn-hover-animate .btn-icon-span {
+.btn-hover-animate .btn-icon-span-1 {
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -9076,7 +9087,7 @@ a:active {
     .section-subtitle,
     .popular__listing-subtitle,
     .reviews__subtitle {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .hand__picked-title,
@@ -9403,8 +9414,9 @@ a:active {
 
 
     .reviews__title {
-        font-size: 29px !important;
-        margin-bottom: 31px;
+        font-size: 20px !important;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .header-page .link-reg ul {
@@ -10682,12 +10694,12 @@ a:active {
     }
 
     /* .mobile-logo-img img {
-        width: 100%;
+        width: 10%;
         height: auto;
-        max-width: 120px;
+        max-width: 12px;
         margin: 0 auto;
         
-    } */
+    }   */
     .featured__category_box a {
         width: 100%;
     }

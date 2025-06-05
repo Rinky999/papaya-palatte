@@ -51,7 +51,7 @@ function Home() {
                 </div>
               
                 <a class="mobile-logo-img" href="index.html">
-                      <h5 style={{textAlign:'left'}}>FindMyLawyer</h5>
+                    <img style={{textAlign:'center', fontSize:'25px',cursor:"pointer"}}  onClick={()=>navigate('/') } src={logo2} width="10" height="7px" />
                     {/* <img src="img/png/logo.png" alt="logo" width="172" height="45"/> */}
                 </a>
                 <div class="m-login">
@@ -106,7 +106,7 @@ function Home() {
                                                 </li>
                                             </ul>
                                             <button type="submit" class="first-bg-color btn-hover-animate"> search
-                                                 <span class="btn-icon-span">
+                                                 <span class="btn-icon-span-1">
                                                     <i class="fa fa-search fa-first"></i>
                                                     <i class="fa fa-chevron-right fa-second"></i>
                                                 </span>
@@ -134,7 +134,7 @@ function Home() {
                                 <div class="hand__picked-item vehicles d-flex flex-column align-items-center justify-content-center">
                                     <div class="fl-icon-box">
                                         <img src='https://www.freeiconspng.com/uploads/family-icon-9.png'/>
-                                        {/* <img src={logo}/> */}
+                                       
                                     </div>
                                     <span class="hand__picked-item--line"></span>
                                     <h3 class="hand__picked-item--title">Family Law</h3>
