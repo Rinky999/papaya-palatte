@@ -7,7 +7,9 @@ function Header() {
     <div>
           <header class="fl-header fl-header-single fl-header-type1">
                 <div class="nav-logo d-flex align-items-center">
-                     <h3 style={{textAlign:'center', fontSize:'25px',cursor:"pointer"}}  onClick={()=>navigate('/')}><u>FindMyLawyer</u></h3>
+                    
+                     <h3 style={{textAlign:'center', fontSize:'25px',cursor:"pointer"}}  onClick={()=>navigate('/') }><u>FindMyLawyer</u></h3>
+                 
                 </div>
                 <nav class="fl-mega-menu nav-menu">
                     <ul id="menu-main-menu-1" class="menu nav-menu">

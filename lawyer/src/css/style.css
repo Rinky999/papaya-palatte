@@ -68,7 +68,144 @@
     background-attachment: fixed;
     position: relative;
 }
+/* ===================================================== */
 
+.responsive-img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .responsive-img {
+    height: 40px; /* or auto */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-img {
+    height: 250px;
+  }
+}
+
+
+
+
+@media (max-width: 768px),(max-width: 480px) {
+  .first__screen-title {
+    font-size: 15px !important;  /* smaller font */
+  }
+  
+  .first__screen-description {
+    font-size: 10px !important;
+  }
+  
+  div[style*="width: 70%"] {
+    width: 90% !important;
+    margin-left: 5% !important;
+    padding: 10px !important;
+    margin-top: -100px !important;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+  }
+  
+  .btn.dropdown-toggle {
+    width: 100%;
+     font-size: 10px !important;
+  }
+  
+  .first__screen-form form {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px),(max-width: 480px){
+.first-bg-color {
+  background-color: #007BFF; /* Example background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 10px !important;
+  border: none;
+  border-radius: 4px;
+  height: 29px !important;
+}
+
+.btn-hover-animate:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s;
+}
+
+.btn-icon-span i {
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+}
+
+@media (max-width: 768px),(max-width: 480px){
+.hand__picked-title 
+{
+font-size: 20px !important;
+/* margin-top: 100px; */
+}
+
+
+
+
+.hand__picked{
+    margin-top: -50px;
+
+}
+
+
+
+.hand__picked-featured{
+    font-size: 20px !important;
+
+}
+
+.container__1320{
+width: 400px !important;
+
+}
+
+
+
+/* Default styling (Mobile-first) */
+.featured__category_box {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.featured__category_box img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Tablet view (768px and up) */
+@media (min-width: 768px) {
+    .featured__category_box {
+        margin: 20px auto;
+    }
+
+    .featured__category_box img {
+        max-width: 100px;
+    }
+}
+
+
+.featured__category-title{
+    font-size: 20px !important;
+
+}}
+/* ================================================== */
 
 .hero__screen-content {
     min-height: 800px;
