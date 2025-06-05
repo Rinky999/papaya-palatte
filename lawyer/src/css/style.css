@@ -92,7 +92,8 @@
 
 
 
-@media (max-width: 768px),(max-width: 480px) {
+@media (max-width: 768px),(max-width: 480px) 
+{
   .first__screen-title {
     font-size: 15px !important;  /* smaller font */
   }
@@ -145,6 +146,7 @@
 .btn-icon-span i {
   margin-left: 8px;
   transition: transform 0.3s;
+
 }
 }
 
@@ -183,18 +185,59 @@ width: 400px !important;
 
 }}
 @media(max-width:400){
-    .responsive-img3{
+    .responsive-img-3{
     width: 20px !important;
     margin-right: 50px !important;
     height: 20px;
     padding: 20px 25px;
 }
 
-.hand__picked-brand img {
+/* .hand__picked-brand img {
     max-width: 100%;
     height: auto;
+} */
+}
+
+@media (max-width: 768px),(max-width: 480px){
+.text{
+  
+  color: white;
+  padding: 10px 20px;
+  font-size: 10px !important;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  text-align: center !important;
+  
+}
+.link__template{
+    height: 40px !important;
+  width: 70%!important;
+  }
+
+}
+@media (max-width: 768px),(max-width: 480px){
+.text .link__template{
+  
+  color: white;
+  padding: 10px 20px;
+  font-size: 10px !important;
+  border: none;
+  border-radius: 4px;
+  height: 25px !important;
+  width: 20px !important;
+
+}
+
+.btn-icon-span i {
+  margin-left: 8px;
+  transition: transform 0.3s;
+  
 }
 }
+
+
+
 /* ================================================== */
 
 .hero__screen-content {
@@ -662,7 +705,7 @@ html .header-style-2 .link-reg .submit__listing span {
     background-color: #00a8d8;
 }
 
-@media screen and (min-width: 810px) {
+/* @media screen and (min-width: 810px) {
     .mb-200 {
         padding-bottom: 200px;
     }
@@ -698,7 +741,7 @@ html .header-style-2 .link-reg .submit__listing span {
     .mb-45 {
         margin-bottom: 45px;
     }
-}
+} */
 
 html {
     -webkit-box-sizing: border-box;
@@ -3389,7 +3432,7 @@ html .nav-pills .nav-link {
 
 .featured__category_box h6 {
     color: #fff;
-    font-weight: 400;
+    font-weight: 400px;
     z-index: 6;
     font-size: 12px;
     opacity: 0.85;
@@ -10627,20 +10670,37 @@ a:active {
         flex-direction: column;
     }
 
+   
+
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
 
     .m-login {
         display: none;
     }
 
-    .mobile-logo-img img {
+    /* .mobile-logo-img img {
         width: 100%;
         height: auto;
         max-width: 120px;
         margin: 0 auto;
+        
+    } */
+    .featured__category_box a {
+        width: 100%;
+    }
+    
+    .featured__category_box div{
+        position: relative;
+        max-width: 80px;
+       
     }
 
-}
+   
+     .we__offer.we__offer2 .link__template {
+        text-align: center;
+        margin: 0 auto;
+  
+}}

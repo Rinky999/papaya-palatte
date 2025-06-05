@@ -230,7 +230,7 @@ function Home() {
                                     <img 
                                     src="https://www.freeiconspng.com/uploads/family-icon-9.png" 
                                     alt="gamer"
-                                    className="responsive-img3"/>
+                                   />
                                     <div class="caption-info">
                                         <div class="caption-decore"></div>
                                         <h5>Family Law Consultation</h5>
@@ -243,7 +243,7 @@ function Home() {
                             <div class="featured__category_box featured__category_box_style2">
                                 <a href="#">
                                     <img src="https://static.vecteezy.com/system/resources/previews/031/716/638/non_2x/transparent-background-settings-icon-png.png" alt="community-talk"
-                                     className="responsive-img3"/>
+                                     />
                                     <div class="caption-info">
                                         <div class="caption-decore"></div>
                                         <h5>Business Legal Advice</h5>
@@ -255,7 +255,9 @@ function Home() {
                         <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                             <div class="featured__category_box featured__category_box_style2">
                                 <a href="#">
-                                    <img src="https://png.pngtree.com/png-vector/20240125/ourmid/pngtree-judge-and-courtroom-png-image_11550438.png" alt="phone-laptops"/>
+                                    <img src="https://png.pngtree.com/png-vector/20240125/ourmid/pngtree-judge-and-courtroom-png-image_11550438.png" 
+                                    alt="phone-laptops"/>
+
                                     <div class="caption-info">
                                         <div class="caption-decore"></div>
                                         <h5>Criminal Defense"</h5>
@@ -267,7 +269,9 @@ function Home() {
                         <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                             <div class="featured__category_box featured__category_box_style2">
                                 <a href="#">
-                                    <img src="http://getdrawings.com/free-icon-bw/commercial-real-estate-icons-22.png" alt="baby-accessories"/>
+                                    <img src="http://getdrawings.com/free-icon-bw/commercial-real-estate-icons-22.png"
+                                     alt="baby-accessories"
+                                     />
                                     <div class="caption-info">
                                         <div class="caption-decore"></div>
                                         <h5>Property Disputes"</h5>
