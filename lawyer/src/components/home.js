@@ -227,7 +227,10 @@ function Home() {
                         <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                             <div class="featured__category_box featured__category_box_style2">
                                 <a href="#">
-                                    <img src="https://www.freeiconspng.com/uploads/family-icon-9.png" alt="gamer"/>
+                                    <img 
+                                    src="https://www.freeiconspng.com/uploads/family-icon-9.png" 
+                                    alt="gamer"
+                                    className="responsive-img3"/>
                                     <div class="caption-info">
                                         <div class="caption-decore"></div>
                                         <h5>Family Law Consultation</h5>
@@ -239,7 +242,8 @@ function Home() {
                         <div class="col-12 col-md-6 col-lg-3 col-xl-3">
                             <div class="featured__category_box featured__category_box_style2">
                                 <a href="#">
-                                    <img src="https://static.vecteezy.com/system/resources/previews/031/716/638/non_2x/transparent-background-settings-icon-png.png" alt="community-talk"/>
+                                    <img src="https://static.vecteezy.com/system/resources/previews/031/716/638/non_2x/transparent-background-settings-icon-png.png" alt="community-talk"
+                                     className="responsive-img3"/>
                                     <div class="caption-info">
                                         <div class="caption-decore"></div>
                                         <h5>Business Legal Advice</h5>
