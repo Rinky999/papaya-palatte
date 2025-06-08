@@ -7,8 +7,7 @@ import { useNavigate } from 'react-router-dom'
 function Header() {
     const navigate=useNavigate()
   return (
-    <div>
-          <header class="fl-header fl-header-single fl-header-type1">
+    <div>          <header class="fl-header fl-header-single fl-header-type1">
                 <div class="nav-logo d-flex align-items-center">
                    
                      <img style={{textAlign:'center', fontSize:'25px',cursor:"pointer"}}  onClick={()=>navigate('/') } src={logo1} />

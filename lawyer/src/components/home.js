@@ -17,29 +17,34 @@ function Home() {
 
     <div class="wrapper">
         <div class="container__1620">
-            <div class="fl-mobile-nav">
-                <div id="dl-menu" class="dl-menuwrapper">
+            <div class="fl-mobile-nav" >
+             <div id="dl-menu" class="dl-menuwrapper" style={{zIndex:"9999", position:"relative"}}>
                     <button class="dl-trigger">Open Menu</button>
-                  
-                    <ul class="dl-menu">
+                    <ul class="dl-menu" >
                         <li>
-                            <a onClick={()=>navigate('/')}>Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">Our Listing</a>
+                            <a href="#">Find Lawyers</a>
                             <ul class="dl-submenu">
                                 <li><a href="02_listings-list.html">Listing 1</a></li>
                                 <li><a href="02_listings-grid.html">Listing 2</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about.html">How It Works</a>
+
                         </li>
                         <li>
-                            <a href="blog.html">News</a>
+                            <a href="blog.html">Legal Resources</a>
+
                         </li>
                         <li>
-                            <a href="">Pages</a>
+                            <a href="blog.html">About Us</a>
+
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
                             <ul class="dl-submenu">
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="404.html">404 page</a></li>
@@ -48,6 +53,7 @@ function Home() {
                             </ul>
                         </li>
                     </ul>
+
                 </div>
               
                 <a class="mobile-logo-img" href="index.html">
@@ -283,7 +289,7 @@ function Home() {
                     </div>
                     <a href="#" class="link__template btn-hover-animate d-flex align-items-center justify-content-center">
                         <div class="text">view all categories</div>
-                        <span class="btn-icon-span">
+                        <span class="btn-icon-span-2">
                             <i class="fa fa-list fa-first"></i>
                             <i class="fa fa-chevron-right fa-second"></i>
                         </span>
@@ -361,7 +367,7 @@ function Home() {
                                                             aliquip ex ea commodo consequat...
                                                         </p>
                                                     </div>
-                                                    <div class="listing-card__info">
+                                                    <div class="listing-card__info custom-hover">
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
@@ -412,7 +418,7 @@ function Home() {
                                                             aliquip ex ea commodo consequat...
                                                         </p>
                                                     </div>
-                                                    <div class="listing-card__info">
+                                                    <div class="listing-card__info  custom-hover">
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
@@ -466,7 +472,7 @@ function Home() {
                                                             aliquip ex ea commodo consequat...
                                                         </p>
                                                     </div>
-                                                    <div class="listing-card__info">
+                                                    <div class="listing-card__info custom-hover">
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
@@ -520,7 +526,7 @@ function Home() {
                                                             aliquip ex ea commodo consequat...
                                                         </p>
                                                     </div>
-                                                    <div class="listing-card__info">
+                                                    <div class="listing-card__info  custom-hover">
                                                         <div class="info-wrapper">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
@@ -1817,7 +1823,7 @@ function Home() {
                                 <div class="col-a-right">
                                     <a href="#" class="link__template btn-hover-animate d-flex ">
                                         <div class="text">get started today</div>
-                                        <span class="btn-icon-span">
+                                        <span class="btn-icon-span-3">
                                             <i class="fa fa-chevron-right fa-first"></i>
                                             <i class="fa  fa-paper-plane fa-second"></i>
                                         </span>
