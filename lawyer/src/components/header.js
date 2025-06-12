@@ -1,7 +1,5 @@
 import React from 'react'
-import logo from '../components/counvoImg/counvo - Findmylawyer.jpg'
-import logo1 from '../components/counvoImg/counvo - Findmylawyer_Icon (1).png'
-import logo2 from '../components/counvoImg/counvo - Findmylawyer.png'
+import logo from '../components/counvoImg/counvo-FindMyLawyer.jpeg'
 import { useNavigate } from 'react-router-dom'
 
 function Header() {
@@ -10,7 +8,7 @@ function Header() {
     <div>          <header class="fl-header fl-header-single fl-header-type1">
                 <div class="nav-logo d-flex align-items-center">
                    
-                     <img style={{textAlign:'center', fontSize:'25px',cursor:"pointer"}}  onClick={()=>navigate('/') } src={logo1} />
+                     <img style={{textAlign:'center', fontSize:'25px',cursor:"pointer"}}  onClick={()=>navigate('/') } src={logo} />
                  
                 </div>
                 <nav class="fl-mega-menu nav-menu">

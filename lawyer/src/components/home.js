@@ -2,10 +2,7 @@ import React from 'react'
 import '../css/style.css'
 import Header from '../components/header';
 import { useNavigate } from 'react-router-dom';
-import logo from '../components/counvoImg/counvo - Findmylawyer.jpg'
-import logo1 from '../components/counvoImg/counvo - Findmylawyer.png'
-import logo2 from '../components/counvoImg/counvo - Findmylawyer_Icon (1).png'
-
+import logo from '../components/counvoImg/counvo-FindMyLawyer.jpeg'
 function Home() {
 
     const navigate=useNavigate()
@@ -44,20 +41,18 @@ function Home() {
 
                         </li>
                         <li>
-                            <a href="">Contact</a>
-                            <ul class="dl-submenu">
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="404.html">404 page</a></li>
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="register.html">Registration</a></li>
-                            </ul>
+                                <a href="contact.html">Contact</a>
                         </li>
+                         <li>
+                            <a onClick={()=>navigate('/login')} >Login/SignUp</a>
+                         </li>
+                              
                     </ul>
 
                 </div>
               
                 <a class="mobile-logo-img" href="index.html">
-                    <img style={{textAlign:'center', fontSize:'25px',cursor:"pointer"}}  onClick={()=>navigate('/') } src={logo2} width="10" height="7px" />
+                    <img style={{textAlign:'center', fontSize:'25px',cursor:"pointer"}}  onClick={()=>navigate('/') } src={logo} width="10" height="7px" />
                     {/* <img src="img/png/logo.png" alt="logo" width="172" height="45"/> */}
                 </a>
                 <div class="m-login">
@@ -80,7 +75,7 @@ function Home() {
                                 />
                                 </div>
 
-                            <div style={{height:"500px",backgroundColor:"white",marginTop:"-150px",zIndex:"9999",borderRadius:"8px",width:"70%",marginLeft:"15%",padding:"20px"}}>
+                            <div style={{height:"500px",backgroundColor:"white",marginTop:"-150px",borderRadius:"8px",width:"70%",marginLeft:"15%",padding:"20px"}}>
                              <div >
                                 <div class="svg45">
                                     {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.57 13.01">
@@ -335,7 +330,7 @@ function Home() {
                                                     <div class="listing-card__bookmark active">
                                                         Featured
                                                     </div>
-                                                    <div class="listing-btn-action">
+                                                    {/* <div class="listing-btn-action">
                                                         <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
                                                             <i class="fa-solid fa-eye"></i>
                                                         </a>
@@ -347,7 +342,7 @@ function Home() {
                                                             <i class="fa-regular fa-heart"></i>
                                                             <i class="fa-solid fa-heart"></i>
                                                         </a>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <div class="listing-card__middle">
                                                     <div class="listing-card__body">
@@ -387,9 +382,9 @@ function Home() {
                                             <div class="listing-card__box" data-marker="1">
                                                 <div class="listing-card__media shine">
                                                     <a href="02_listings-grid.html">
-                                                        <img src="https://www.lawyer.com/img/banner-image.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
+                                                        <img src="https://www.lawyer.com/img/banner-image.jpg" width="360" alt="Fadisy Restaurant"/>
                                                     </a>
-                                                    <div class="listing-btn-action">
+                                                    {/* <div class="listing-btn-action">
                                                         <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
                                                             <i class="fa-solid fa-eye"></i>
                                                         </a>
@@ -401,7 +396,7 @@ function Home() {
                                                             <i class="fa-regular fa-heart"></i>
                                                             <i class="fa-solid fa-heart"></i>
                                                         </a>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <div class="listing-card__middle">
                                                     <div class="listing-card__body">
@@ -440,7 +435,7 @@ function Home() {
                                                     <a href="02_listings-grid.html">
                                                         <img src="https://fthmb.tqn.com/Kcf8EVzEvVsS3hV4l_3KVipw6GE=/4841x3633/filters:fill(auto,1)/Gettywomanlawyer-5955ab903df78cdc296e8f7e.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
                                                     </a>
-                                                    <div class="listing-btn-action">
+                                                    {/* <div class="listing-btn-action">
                                                         <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
                                                             <i class="fa-solid fa-eye"></i>
                                                         </a>
@@ -452,7 +447,7 @@ function Home() {
                                                             <i class="fa-regular fa-heart"></i>
                                                             <i class="fa-solid fa-heart"></i>
                                                         </a>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <div class="listing-card__middle">
                                                     <div class="listing-card__body">
@@ -494,7 +489,7 @@ function Home() {
                                                     <a href="02_listings-grid.html">
                                                         <img src="https://img.freepik.com/premium-photo/professional-lawyer-image-generated-ai_644690-13316.jpg" width="360" height="270" alt="Fadisy Restaurant"/>
                                                     </a>
-                                                    <div class="listing-btn-action">
+                                                    {/* <div class="listing-btn-action">
                                                         <a class="listing-btn-ico view_more_link" href="02_listings-grid.html" data-uk-tooltip="View More" title="" data-aria-describedby="data-uk-tooltip-0">
                                                             <i class="fa-solid fa-eye"></i>
                                                         </a>
@@ -506,7 +501,7 @@ function Home() {
                                                             <i class="fa-regular fa-heart"></i>
                                                             <i class="fa-solid fa-heart"></i>
                                                         </a>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <div class="listing-card__middle">
                                                     <div class="listing-card__body">
@@ -544,18 +539,6 @@ function Home() {
                                     <div class=" col-12 col-xl-4 col-md-6">
                                         <div class="listing-card ll-none">
 
-
-
-
-
-
-
-
-
-
-
-
-                                            
                                             {/* <div class="listing-card__box">
                                                 <div class="listing-card__media shine">
                                                     <a href="02_listings-grid.html">
@@ -610,6 +593,12 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
+
                             {/* <div class="tab-pane fade" id="pills-rated" role="tabpanel" data-aria-labelledby="pills-profile-tab">
                                 <div class="row slww">
                                     <div class=" col-12 col-xl-4 col-md-6">
@@ -1814,7 +1803,7 @@ function Home() {
             </section>
             <section class="we__offer">
                 <div class="container">
-                    <div style={{marginTop:'-250px'}} >
+                    <div  >
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <h2 class="we__offer-title"> We Offer Wide Range of Listings Promoting Your Business </h2>
@@ -1859,7 +1848,7 @@ function Home() {
                 </div>
             </section>
             <section class="reviews reviews2 py-105">
-                <div class="container__1575" style={{marginTop:'-200px'}}>
+                <div class="container__1575" style={{marginTop:'-300px'}}>
                     <h3 class="reviews__subtitle text-center first-color"> We're proud to have earned their trust </h3>
                     <h2 class="reviews__title">
                         Reviews By Customers
@@ -1989,7 +1978,7 @@ function Home() {
                         <form action="#">
                             <input type="email" placeholder="Your email .. " class="w-100"/>
                             <button type="submit" class="btn-hover-animate first-bg-color">
-                                <span class="btn-icon-span">
+                                <span class="btn-icon-span-4">
                                     <i class="fa fa-search fa-first"></i>
                                     <i class="fa fa-chevron-right fa-second"></i>
                                 </span>
