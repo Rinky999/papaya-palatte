@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/style.css'
 import Header from '../components/header';
+
 import { useNavigate } from 'react-router-dom';
 import logo from '../components/counvoImg/counvo-FindMyLawyer.jpeg'
 function Home() {
@@ -89,9 +90,10 @@ function Home() {
                                         <div class="input-group">
                                             {/* <input type="search" class="form-control" aria-label="Text input with dropdown button" placeholder="Search anything .... "/> */}
                                             <span class="form-input-midle"></span>
-                                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Select Vendor </button>
-                                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select City</button>
-                                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Select Locality </button>
+                                            <button class="btn  dropdown-toggle btn-1" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Legal specialization </button>
+                                            <button class="btn  dropdown-toggle btn-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Location/jurisdiction</button>
+                                            <button class="btn  dropdown-toggle btn-3" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Language </button>
+                                            <button class="btn  dropdown-toggle btn-4" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Availability status </button>
                                             <ul class="dropdown-menu dropdown-menu-end">
                                                 <li>
                                                     <a class="dropdown-item" href="#">London</a>
@@ -362,8 +364,8 @@ function Home() {
                                                             aliquip ex ea commodo consequat...
                                                         </p>
                                                     </div>
-                                                    <div class="listing-card__info custom-hover">
-                                                        <div class="info-wrapper">
+                                                    <div class="listing-card__info ">
+                                                        <div class="info-wrapper custom-hover">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
                                                                  <li>💬 Chat</li>
@@ -413,8 +415,8 @@ function Home() {
                                                             aliquip ex ea commodo consequat...
                                                         </p>
                                                     </div>
-                                                    <div class="listing-card__info  custom-hover">
-                                                        <div class="info-wrapper">
+                                                    <div class="listing-card__info ">
+                                                        <div class="info-wrapper custom-hover">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
                                                                  <li >💬 Chat</li>
@@ -467,8 +469,8 @@ function Home() {
                                                             aliquip ex ea commodo consequat...
                                                         </p>
                                                     </div>
-                                                    <div class="listing-card__info custom-hover">
-                                                        <div class="info-wrapper">
+                                                    <div class="listing-card__info ">
+                                                        <div class="info-wrapper custom-hover">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
                                                                  <li >💬 Chat</li>
@@ -521,8 +523,8 @@ function Home() {
                                                             aliquip ex ea commodo consequat...
                                                         </p>
                                                     </div>
-                                                    <div class="listing-card__info  custom-hover">
-                                                        <div class="info-wrapper">
+                                                    <div class="listing-card__info ">
+                                                        <div class="info-wrapper custom-hover">
                                                             <div class="price">$3,250.00</div>
                                                             <ul class="data-item d-flex justify-content-between">
                                                              <li >💬 Chat</li>
